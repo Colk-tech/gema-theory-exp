@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  gcc:
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    container_name: aes-gcc
+    volumes:
+      - .:/work/aes
+    restart: always
+    tty: true
