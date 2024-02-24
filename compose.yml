@@ -6,7 +6,7 @@ services:
     build:
       context: .
       dockerfile: ./Dockerfile
-    container_name: fame-theory-gcc
+    container_name: game-theory-gcc
     volumes:
       - .:/work/game-theory
     restart: always
